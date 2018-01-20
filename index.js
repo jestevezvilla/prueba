@@ -20,15 +20,15 @@ const Carrousel = () => {
   const createContent = text => {
     const content = document.createElement("dd");
     content.className = "MyLittleAccordeon-content";
-    content.innerHTML = text;
+    content.innerHTML = `<p>${text}</p>`;
     main.appendChild(content);
 
     contents.push(content);
   };
 
   const setVisibility = pos => {
-    contents.map((content, idx) => {
-      content.classList.toggle("show", pos === idx);
+    headers.map((header, idx) => {
+      header.classList.toggle("show", pos === idx);
     });
   };
 

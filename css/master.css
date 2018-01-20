@@ -1,0 +1,25 @@
+.MyLittleAccordeon {
+  max-width: 30%; }
+  .MyLittleAccordeon .MyLittleAccordeon-header {
+    background-color: bisque;
+    border: 1px solid grey;
+    border-bottom: none;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 0.5em; }
+    .MyLittleAccordeon .MyLittleAccordeon-header:last-of-type {
+      border-bottom: 1px solid grey; }
+    .MyLittleAccordeon .MyLittleAccordeon-header.show + .MyLittleAccordeon-content {
+      border: 1px solid grey;
+      border-bottom: none;
+      height: auto;
+      max-height: 200px;
+      transition: max-height 0.5s ease; }
+  .MyLittleAccordeon .MyLittleAccordeon-content {
+    background-color: coral;
+    font-size: 0.8em;
+    overflow: hidden;
+    margin: 0;
+    max-height: 0;
+    padding-left: 20px;
+    transition: max-height 0.5s ease; }
