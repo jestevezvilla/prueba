@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/jestevezvilla/prueba#readme",
   "dependencies": {
-    "node-sass": "^4.7.2"
+    "node-sass": "^4.12.0"
   }
 }
